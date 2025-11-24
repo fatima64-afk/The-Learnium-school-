@@ -10,30 +10,7 @@ body{
     background:#f2f2f2;
 }
 
-/* HEADER IMAGE area */
-.hero{
-    background: url("1763932870715.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    color:black;                    /* << COLOR BLACK */
-}
-
-.hero h2{
-    margin:0;
-    font-size:22px;
-    font-weight:bold;
-}
-
-.hero p{
-    margin-top:5px;
-    font-size:15px;
-}
-
+/* HEADER BAR */
 header{
     background:#1a73e8;
     padding:15px;
@@ -42,20 +19,45 @@ header{
     font-size:22px;
 }
 
-.section{
-    padding:30px;
-    text-align:center;
+/* HERO IMAGE */
+.hero{
+    background: url("1763932870715.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+    text-shadow:0 0 5px black;
 }
 
+.hero h2{
+    font-size:30px;
+    margin:0;
+}
+
+.hero p{
+    margin:5px 0 0;
+    font-size:17px;
+    color:black;            /*  <-- ADDED */
+}
+
+/* CARD BOX */
 .card{
-    width:80%;
+    width:85%;
     background:white;
     margin:10px auto;
     padding:20px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2);
+    box-shadow:0 0 10px rgba(0,0,0,0.25);
+    text-align:center;
 }
 
+/* FOOTER */
 .footer{
     background:#000;
     color:#fff;
@@ -70,16 +72,6 @@ header{
 
 <body>
 
-<!-- NAV BAR -->
-<div id="nav-placeholder"></div>
-<script>
-fetch("nav.html")
-.then(res => res.text())
-.then(data => {
-  document.getElementById("nav-placeholder").innerHTML = data;
-});
-</script>
-
 
 <header>
     The Learnium School
@@ -87,8 +79,8 @@ fetch("nav.html")
 
 
 <div class="hero">
-   <h2>Learning Today, Leading Tomorrow</h2>
-   <p>Welcome to The Learnium School</p>
+   <h2>The Learnium School</h2>
+   <p>Welcome to Learnium School</p>
 </div>
 
 
@@ -103,9 +95,11 @@ fetch("nav.html")
     <p>10+</p>
 </div>
 
+
 <div class="footer">
     Developed by Noor Hijab
 </div>
 
 </body>
 </html>
+
