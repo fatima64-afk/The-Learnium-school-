@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>  
-<title> The Learnium School</title>  
+<title> TheLearnium School</title>  
 
 <style>  
 body{
@@ -10,27 +10,7 @@ body{
     background:#f2f2f2;
 }
 
-/* NAV FIX */
-nav ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    background:#ffffff;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    border-bottom:1px solid #ddd;
-}
-
-nav ul li a{
-    text-decoration:none;
-    display:block;
-    padding:12px;
-    font-weight:bold;
-    color:#000;
-}
-
-/* Hero */
+/* HEADER IMAGE area */
 .hero{
     background: url("1763932870715.jpg");
     background-size: cover;
@@ -44,6 +24,10 @@ nav ul li a{
     text-shadow:0 0 5px black;
 }
 
+.hero p{
+    margin-top:-20px;     /* TEXT UPWARD FIX */
+}
+
 header{
     background:#1a73e8;
     padding:15px;
@@ -52,10 +36,9 @@ header{
     font-size:22px;
 }
 
-/* cards inside hero */
-.hero-cards{
-    width:100%;
-    margin-top:-50px;
+.section{
+    padding:30px;
+    text-align:center;
 }
 
 .card{
@@ -64,10 +47,9 @@ header{
     margin:10px auto;
     padding:20px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-/* footer */
 .footer{
     background:#000;
     color:#fff;
@@ -88,7 +70,7 @@ header{
 fetch("nav.html")
 .then(res => res.text())
 .then(data => {
- document.getElementById("nav-placeholder").innerHTML = data;
+  document.getElementById("nav-placeholder").innerHTML = data;
 });
 </script>
 
@@ -104,19 +86,15 @@ fetch("nav.html")
 </div>
 
 
-<!-- CARDS ABOVE IMAGE -->
-<div class="hero-cards">
 
 <div class="card">
     <h3>Students</h3>
-    <p>100+</p>
+    <p>300+</p>
 </div>
 
 <div class="card">
     <h3>Teachers</h3>
     <p>10+</p>
-</div>
-
 </div>
 
 <div class="footer">
@@ -125,4 +103,3 @@ fetch("nav.html")
 
 </body>
 </html>
-
