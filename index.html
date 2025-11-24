@@ -2,16 +2,27 @@
     <!DOCTYPE html>
 <html>
 <head>  
-<title>The Learnium School</title>  
+<title> TheLearnium School</title>  
 
 <style>  
 body{
     font-family: Arial;
     margin:0;
-    background: url("background.jpg");
+    background:#f2f2f2;
+}
+
+/* HEADER IMAGE area */
+.hero{
+    background: url("1763932870715.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
+    height: 350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-shadow:0 0 5px black;
 }
 
 header{
@@ -19,27 +30,73 @@ header{
     padding:15px;
     color:white;
     text-align:center;
-    font-size:25px;
+    font-size:22px;
 }
 
 .section{
-    padding:50px 20px;
+    padding:30px;
     text-align:center;
-    color:white;
-    text-shadow:1px 1px 3px black;
 }
 
 .card{
     width:80%;
     background:white;
-    margin:20px auto;
+    margin:10px auto;
     padding:20px;
     border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.3);
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
 .footer{
     background:#000;
     color:#fff;
-    padding:15
-    
+    padding:15px;
+    text-align:center;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+
+<body>
+
+<!-- NAV BAR -->
+<div id="nav-placeholder"></div>
+<script>
+fetch("nav.html")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("nav-placeholder").innerHTML = data;
+});
+</script>
+
+
+<header>
+    Learnium School System
+</header>
+
+
+<div class="hero">
+   <h2>Learning Today, Leading Tomorrow</h2>
+   <p>Welcome to Learnium School</p>
+</div>
+
+
+
+<div class="card">
+    <h3>Students</h3>
+    <p>100+</p>
+</div>
+
+<div class="card">
+    <h3>Teachers</h3>
+    <p>10+</p>
+</div>
+
+<div class="footer">
+    Developed by Noor Hijab
+</div>
+
+</body>
+</html>
