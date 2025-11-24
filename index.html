@@ -25,27 +25,28 @@ header{
     background-size: cover;
     background-position: center;
     height: 350px;
-    
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-    text-shadow:0 0 5px black;
+    position: relative;
 }
 
-.hero h2{
-    font-size:30px;
+.top-text{
+    position:absolute;
+    top:15px;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+}
+
+.top-text h2{
+    font-size:25px;
+    color:black;
     margin:0;
 }
 
-/* Updated Welcome Text */
-.hero p{
-    margin-top:-40px;
-    font-size:17px;
+.top-text p{
+    margin:5px 0 0;
+    font-size:18px;
     color:black;
-    text-shadow:none;
+    font-weight:bold;
 }
 
 /* CARD BOX */
@@ -74,17 +75,18 @@ header{
 
 <body>
 
-
 <header>
     The Learnium School
 </header>
 
-
 <div class="hero">
-   <h2>The Learnium School</h2>
-   <p>Welcome to The Learnium School</p>
-</div>
 
+    <div class="top-text">
+       <h2>Learning Today, Leading Tomorrow</h2>
+       <p>Welcome To Learnium School</p>
+    </div>
+
+</div>
 
 
 <div class="card">
