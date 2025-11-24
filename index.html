@@ -10,7 +10,30 @@ body{
     background:#f2f2f2;
 }
 
-/* HEADER BAR */
+/* HEADER IMAGE area */
+.hero{
+    background: url("1763932870715.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:black;                    /* << COLOR BLACK */
+}
+
+.hero h2{
+    margin:0;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.hero p{
+    margin-top:5px;
+    font-size:15px;
+}
+
 header{
     background:#1a73e8;
     padding:15px;
@@ -19,44 +42,20 @@ header{
     font-size:22px;
 }
 
-/* HERO IMAGE */
-.hero{
-    background: url("1763932870715.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 350px;
-    
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-
-    color:white;
-    text-shadow:0 0 5px black;
+.section{
+    padding:30px;
+    text-align:center;
 }
 
-.hero h2{
-    font-size:30px;
-    margin:0;
-}
-
-.hero p{
-    margin:5px 0 0;
-    font-size:17px;
-}
-
-/* CARD BOX */
 .card{
-    width:85%;
+    width:80%;
     background:white;
     margin:10px auto;
     padding:20px;
     border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.25);
-    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
 }
 
-/* FOOTER */
 .footer{
     background:#000;
     color:#fff;
@@ -71,6 +70,16 @@ header{
 
 <body>
 
+<!-- NAV BAR -->
+<div id="nav-placeholder"></div>
+<script>
+fetch("nav.html")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("nav-placeholder").innerHTML = data;
+});
+</script>
+
 
 <header>
     The Learnium School
@@ -78,8 +87,8 @@ header{
 
 
 <div class="hero">
-   <h2>The Learnium School</h2>
-   <p>Welcome to Learnium School</p>
+   <h2>Learning Today, Leading Tomorrow</h2>
+   <p>Welcome to The Learnium School</p>
 </div>
 
 
@@ -93,7 +102,6 @@ header{
     <h3>Teachers</h3>
     <p>10+</p>
 </div>
-
 
 <div class="footer">
     Developed by Noor Hijab
